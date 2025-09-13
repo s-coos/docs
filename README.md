@@ -64,7 +64,8 @@ CLASSPATH=/data/local/tmp/Iris.apk nohup app_process / party.qwer.iris.Main >> /
         - `adb -s localhost:55550 shell`
             - `su 0 sh`
                 - `sh /data/mjy/start.sh`
-3. Run `adb -s localhost:5555 reverse tcp:5172 tcp:5172` on the server
+3. Run others if needed
+    - For example, `adb -s localhost:5555 reverse tcp:5172 tcp:5172` on the server if webhook URL is set to localhost:5172
 
 ### Iris Dashboard
 
