@@ -36,6 +36,8 @@ services:
     volumes:
       - ./data:/data
     restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     command:
       - ro.dalvik.vm.native.bridge=libndk_translation.so
 ```
