@@ -33,6 +33,7 @@ services:
     ports:
       - "127.0.0.1:5555:5555"
       - "127.0.0.1:3000:3000"
+      - "172.17.0.1:3000:3000"
     volumes:
       - ./data:/data
     restart: unless-stopped
