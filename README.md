@@ -5,6 +5,7 @@ How to setup chatbot runtime environment
 ## Setup
 
 1. Setup Ubuntu Server with Docker on x86_64 machine (others untested)
+    - `snap install docker && snap refresh --hold docker`
     - [`modprobe binder_linux devices="binder,hwbinder,vndbinder"`](https://github.com/remote-android/redroid-doc)
     - Start docker compose stack with [`docker-compose.yml` below](#docker-composeyml)
 2. Make SSH tunnel (`ssh -n -L 55550:localhost:5555 192.168.0.42`)
